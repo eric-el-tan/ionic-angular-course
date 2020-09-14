@@ -22,10 +22,9 @@
 
 
 ### Git tag Command 
- git tag -a v0.1 -m "version 0.1"
- git tag
- git tag --list
-
- git push origin v0.1
- git push origin --tags
- git push -u origin master
+- `git tag -a v0.1 -m "version 0.1"`
+- `git tag`
+- `git tag --list`
+- `git push origin v0.1`
+- `git push origin --tags`
+- `git push -u origin master`
