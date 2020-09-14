@@ -1,6 +1,6 @@
 # ionic-angular-course
 
-### [Setup](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727692#questions)
+### 65. Setup [create a new ionic angular project](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727692#questions)
 - `npm install -g ionic`
 - deprecated: `ionic start`
 - `ionic start --help`
@@ -15,7 +15,7 @@
 `ionic serve` -> > ng.cmd run app:serve --host=localhost --port=8100
  - because ionic.config.json: `"type": "angular"`
 
- ### [Add and load a new page](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727706#questions)
+ ### 70.[Add and load a new page](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727706#questions)
  - `ionic generate`
  - `page: recipes` 
  - equivalence to `ng g c recipes` or `ng g page recipes`
@@ -28,3 +28,6 @@
 - `git push origin v0.1`
 - `git push origin --tags`
 - `git push -u origin master`
+
+### 71.[Using Angular Feature on Ionic Components](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727710#questions)
+- 
