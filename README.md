@@ -125,3 +125,73 @@ const routes: Routes = [
 
 ### 73. [Managing State with Services](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727718#questions)
 - 
+```
+$ ionic generate
+? What would you like to generate? service
+? Name/path of service: recipes/recipes
+> ng.cmd generate service recipes/recipes
+CREATE src/app/recipes/recipes.service.spec.ts (362 bytes)
+CREATE src/app/recipes/recipes.service.ts (136 bytes)
+[OK] Generated service!
+```
+
+- recipes.service.ts
+```
+@Injectable({
+  providedIn: 'root'
+})
+export class RecipesService {
+
+  private recipes: Recipe[] = [
+    {
+      id: 'r1',
+      title: 'Schnitzel',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schnitzel.JPG/1024px-Schnitzel.JPG',
+      ingredients: ['French Fries', 'Pork Meat', 'Salad']
+    },
+    {
+      id: 'r2',
+      title: 'Spaghetti',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/ac/Pasta_Puttanesca.jpg',
+      ingredients: ['Spaghetti', 'Meat', 'Tomatos']
+    }
+  ];
+
+  constructor() { }
+
+  getRecipes() {
+    return [...this.recipes];
+  }
+
+  getRecipe(recipeId: string) {
+    return {
+      ...this.recipes.find(recipe => {
+        return recipe.id === recipeId;
+      })
+    };
+  }
+}
+
+```
+- the service class is automatically injected in root, ensure the service can be used application-wide, by any component and page in the application, if the state is changed. the entire application can be updated.
+- result is the same, but data has been moved to RecipesService
+
+### 74. [Extracting and Display Route Param Data](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727720#questions)
+- 
+
+```
+export class RecipeDetailPage implements OnInit {
+
+  constructor(private activatedRoute: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.activatedRoute.paramMap.
+  }
+
+}
+
+```
+`[routerLink]="['./', recipe?.id]"`
+
+### 76. [Navigating between Pages](https://www.udemy.com/course/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/lecture/13727722#questions/9416383)
+- 
