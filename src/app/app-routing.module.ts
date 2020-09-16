@@ -19,6 +19,18 @@ const routes: Routes = [
         loadChildren: () => import('./recipes/recipe-detail/recipe-detail.module').then(m => m.RecipeDetailPageModule)
       }
     ]
+  },
+  {
+    path: 'layout',
+    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutPageModule)
+  },
+  {
+    path: 'layout2',
+    loadChildren: () => import('./layout2/layout2.module').then( m => m.Layout2PageModule)
+  },
+  {
+    path: 'layout3',
+    loadChildren: () => import('./layout3/layout3.module').then( m => m.Layout3PageModule)
   }
 ];
 
