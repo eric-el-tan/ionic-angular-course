@@ -5,11 +5,137 @@
 </ion-header>
 
 <ion-content>
-  <ion-label>a layout that align to the middle</ion-label>
+  <ion-label>inline style: set row height</ion-label>
   <ion-grid class="ion-no-padding">
-    <ion-row>
+    <ion-row style="height: 200px">
       <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
       <ion-col size="4">Row 1 Col 2</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>a column contain bigger content</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px">
+      <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: align item start</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-align-items-start">
+      <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: align item center</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-align-items-center">
+      <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: align item end</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-align-items-end">
+      <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: justify content start</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-justify-content-start">
+      <ion-col size="4">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: justify content center</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-justify-content-center">
+      <ion-col size="4">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: justify content end</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-justify-content-end">
+      <ion-col size="4">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: justify content around</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-justify-content-around">
+      <ion-col size="4">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-label>row: justify content between</ion-label>
+  <ion-grid class="ion-no-padding">
+    <ion-row style="height: 200px" class="ion-justify-content-between">
+      <ion-col size="4">Row 1 Col 1</ion-col>
+      <ion-col size="4">
+        <ion-card>
+          <ion-card-content>
+            <h1>The column</h1>
+            <p>Row 1 Col 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

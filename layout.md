@@ -126,3 +126,31 @@ UPDATE src/app/app-routing.module.ts (1090 bytes)
 [OK] Generated page!
 ```
 - http://localhost:8100/layout3
+
+```
+    <ion-row style="height: 300px">
+      <ion-col size="4" offset="2">Row 1 Col 1</ion-col>
+      <ion-col size="4">Row 1 Col 2</ion-col>
+    </ion-row>
+```
+- [Responsive Grid Layout](https://ionicframework.com/docs/layout/grid)
+- search `default breakpoints`
+
+### [Styling HTML tables with CSS](https://www.youtube.com/watch?v=biI9OFH6Nmg)
+- 
+
+```
+$ ionic generate
+? What would you like to generate? page
+? Name/path of page: css-table
+> ng.cmd generate page css-table
+CREATE src/app/css-table/css-table-routing.module.ts (356 bytes)
+CREATE src/app/css-table/css-table.module.ts (488 bytes)
+CREATE src/app/css-table/css-table.page.html (128 bytes)
+CREATE src/app/css-table/css-table.page.spec.ts (662 bytes)
+CREATE src/app/css-table/css-table.page.ts (267 bytes)
+CREATE src/app/css-table/css-table.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1470 bytes)
+[OK] Generated page!
+```
+- http://localhost:8200/css-table

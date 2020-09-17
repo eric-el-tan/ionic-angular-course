@@ -31,6 +31,18 @@ const routes: Routes = [
   {
     path: 'layout3',
     loadChildren: () => import('./layout3/layout3.module').then( m => m.Layout3PageModule)
+  },
+  {
+    path: 'ion-label',
+    loadChildren: () => import('./ion-label/ion-label.module').then( m => m.IonLabelPageModule)
+  },
+  {
+    path: 'ion-item',
+    loadChildren: () => import('./ion-item/ion-item.module').then( m => m.IonItemPageModule)
+  },
+  {
+    path: 'css-table',
+    loadChildren: () => import('./css-table/css-table.module').then( m => m.CssTablePageModule)
   }
 ];
 
